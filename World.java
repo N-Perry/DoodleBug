@@ -7,7 +7,12 @@ import javax.swing.*;
 public class World {
 	final int size = 5;
 	Bug grid[][] = new Bug[size][size];
-	World() {}
+	JFrame gridFrame = new JFrame("Doodle");
+	JLabel labels[][] = new JLabel[size][size];
+	
+	World() {
+		gridFrame.setLayout(new GridLayout(size,size));
+	}
 	
 	void populate() {
 		for(int i = 0; i < size; i++) {
