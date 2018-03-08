@@ -6,7 +6,7 @@ public class Bug {
 	boolean hasEaten = false;
 	
 	Bug(int b) {
-		if((b > 0) & (b < 3)) {
+		if((b > -1) & (b < 3)) {
 			bugType = b;
 		}
 		else {
@@ -20,7 +20,7 @@ public class Bug {
 	public boolean getHE() {return hasEaten;}
 	
 	public void setType(int b) {
-		if((b > 0) & (b < 3)) {
+		if((b > -1) & (b < 3)) {
 			bugType = b;
 		}
 		else {
